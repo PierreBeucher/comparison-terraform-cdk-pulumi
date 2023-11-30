@@ -15,12 +15,16 @@
         };
                 
         deployPackages = with pkgs; [
-            terraform
-            azure-cli
-            gnumake
             nodejs-slim
             nodePackages.npm
-            nodePackages.cdktf-cli
+            azure-cli
+            
+            terraform
+            nodePackages.cdktf-cli        
+            pulumi
+            pulumiPackages.pulumi-azure-native
+            pulumiPackages.pulumi-language-nodejs
+
         ];
       in {
         devShells = {

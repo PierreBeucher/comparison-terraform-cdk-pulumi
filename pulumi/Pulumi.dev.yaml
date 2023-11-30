@@ -1,0 +1,4 @@
+config:
+  azure-native:location: francecentral
+  demo-az:clusterName: devexample
+  demo-az:resourceGroupName: sauermann-integration
