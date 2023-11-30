@@ -16,7 +16,11 @@
                 
         deployPackages = with pkgs; [
             terraform
-            azure-cli            
+            azure-cli
+            gnumake
+            nodejs-slim
+            nodePackages.npm
+            nodePackages.cdktf-cli
         ];
       in {
         devShells = {
